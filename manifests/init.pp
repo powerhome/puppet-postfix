@@ -98,7 +98,7 @@ class postfix (
   Boolean                         $manage_root_alias   = true,
   Variant[Array[String], String]  $root_mail_recipient = 'nobody',      # root_mail_recipient
   Boolean                         $satellite           = false,
-  String                          $smtp_listen         = '127.0.0.1',   # postfix_smtp_listen
+  Optional[String]                $smtp_listen         = undef,   # postfix_smtp_listen
   Boolean                         $use_amavisd         = false,         # postfix_use_amavisd
   Boolean                         $use_dovecot_lda     = false,         # postfix_use_dovecot_lda
   Boolean                         $use_schleuder       = false,         # postfix_use_schleuder
